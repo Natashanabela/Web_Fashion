@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ANM Styles | Striped Knit Vest</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel = "icon" href = "img/logo.png" type = "image/x-icon">
+	
+	<style type="text/css" >
+		body{
+			font-family: "Poppins", sans-serif;
+			margin: 0%;
+		}
+
+		/*HEADER*/
+		 .header {
+            display: flex;
+		    padding: 30px;
+            align-items: center;
+            justify-content: right;
+		    background-color:#F2D8B3;
+		    color: #992800;
+            
+		}
+
+		@media (max-width: 700px) {
+            .row, .navbar {   
+                flex-direction: column;
+            }
+        }
+
+        *{
+          box-sizing: border-box;
+      	}
+
+      		@media only screen and (max-width: 700px){
+          	.responsive {
+              width: 49.99999%;
+              margin: 6px 0;
+          	}
+      	}
+
+      	@media only screen and (max-width: 500px){
+          	.responsive {
+              width: 100%;
+          	}
+      	}
+
+      	/*MENU ATAS	*/
+		.navbar {
+		      display: flex;
+		      background-color: #862B0D;
+		  }
+  		.navbar a {
+		      color: white;
+		      padding: 14px 20px;
+		      text-decoration: none;
+		      text-align: center;
+		  }
+ 		.navbar a:hover {
+		      background-color: #FFAF00;
+		  }
+         
+          .namaANM{
+            margin-left: 20px;
+        }
+
+		  .logo{
+            max-width: 100%;
+        }
+        
+        /*FOOTER*/
+          .footer {
+            padding: 20px;
+            text-align: center;
+            background: #F2D8B3;
+            color: #992800;
+         }
+
+         .footer ul{
+            margin-top: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 0;
+         }
+
+         .footer ul li a{
+            color:#992800;
+            text-decoration: none;
+            opacity: 0.8;
+         }
+
+         .footer ul li{
+            display: inline-block;
+            padding: 0 15px;
+         }
+
+         .footer ul li:hover{
+            opacity: 1;
+         }
+         
+         .footer .copyright{
+            margin-top: 15px;
+            text-align: center;
+            font-size: 13px;
+            color:#992900b0;
+         }
+       
+       /*Product*/
+
+		.small-container{
+			max-width: 1000px;
+			margin: auto;
+			padding-left: 25px;
+			padding-right: 20px;
+		}
+		.row{
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		.single{
+			margin-top: 80px;
+		}
+		.small-img-row{
+			display: flex;
+			justify-content: space-around;
+		}
+		.col-2 img{
+			max-width: 100%;
+			padding: 50px 0;
+		}
+		.small-img-col{
+			flex-basis: 24%;
+			cursor: pointer;
+		}
+		.single .col-2 img{
+			padding: 0;
+		}
+		.single .col-2{
+			padding: 20px;
+		}
+		.col-2{
+			flex-basis: 50%;
+			min-width: 300px;
+		}
+		.col-2 h1{
+			font-size: 50px;
+			line-height: 60px;
+			margin: 25px 0;
+		}
+
+		.single select{
+			display: block;
+			padding: 10px;
+			margin-top: 20px;
+		}
+		.single h4{
+			margin: 20px 0;
+			font-size: 22px;
+			font-weight: bold;
+		}
+		.single input{
+			width: 50px;
+			padding-left: 10px;
+			font-size: 20px;
+			margin-right: 10px;
+			border: 1px;
+		}
+		.input:focus{
+			outline: none;
+		}
+		a{
+			text-decoration: none;
+			color: #555;
+		}
+		p {
+			color: #555;
+		}
+		.btn{
+			display: inline-block;
+			background: #862B0D;
+			color: #fff;
+			padding: 8px 30px;
+			margin: 30px 0;
+			border-radius: 30px;
+			transition:0.5s;
+		}
+		.btn:hover{
+			background: #FFAF00;
+		}
+	</style>
+
+	<!---
+	<script>
+		var ProductImg = document.getElementByID("ProductImg");
+		var SmallImg = document.getElementByClassName("small-img");
+
+		SmallImg[0].onclick=function(){
+			ProductImg.src=SmallImg[0].src;
+		}
+
+		SmallImg[1].onclick=function(){
+			ProductImg.src=SmallImg[1].src;
+		}
+
+		SmallImg[2].onclick=function(){
+			ProductImg.src=SmallImg[2].src;
+		}
+		SmallImg[3].onclick=function(){
+			ProductImg.src=SmallImg[3].src;
+		}
+	
+
+
+	</script>
+	--->
+
+</head>
+<body>
+
+		<div class="header">
+        <div class="namaANM">
+            <h1>ANM STYLES</h1>
+        </div>
+
+        <div class="logo">
+            <img  src="img/logo.png" alt="" width="120" height="120">
+        </div>
+            
+        
+	</div>
+
+
+	<div class="navbar">
+			<a href="main.html" title="">Home</a> 
+			<a href="main.html" title="">Products</a> 
+			<a href="about.html" title="">About</a> 
+			<a href="contact.html" title="">Contact Us</a> 
+	</div>
+
+	<div class="small-container single">
+		<div class="row">
+			<div class="col-2">
+				<img src="img/3.jpg" width="100%" ID="ProductImg">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/3.1.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="img/3.2.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="img/3.3.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="img/3.4.jpg" width="100%" class="small-img">
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-2">
+				<p>Home / Products</p>
+				<h1>Striped Knit Vest</h1>
+				<h4>$19.74</h4>
+				<select >
+					<option>Select Size</option>
+					<option>XXL</option>
+					<option>XL</option>
+					<option>L</option>
+					<option>M</option>
+					<option>S</option>
+				</select>
+				<input type="number" value="1">
+				<a href="main.html" class="btn">Add to Cart</a>
+				<h3>Product Details</h3>
+				<br>
+				<p>A cable knit sweater vest featuring a V-neckline, varsity striped trim, and cropped hem.Layering garments not included.</p>
+			</div>
+		</div>
+	</div>
+
+	 <!-- Footer -->
+  <div class="footer">
+    <h2>ANM Styles</h2>
+  
+
+
+  <ul class="list">
+    <li>
+        <a href="about.html">About</a>
+    </li>
+    <li>
+        <a href="contact.html">Contact Us</a>
+    </li>
+  </ul>
+
+  <small class="copyright">
+    32210016, 32210096, 32210098 &copy; 2023
+  </small>
+</div>
+
+	
+</body>
+</html>
